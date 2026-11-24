@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "test:login": "cypress run --spec cpress/cypress/e2e/login.cy.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,8 @@
     "passport-jwt": "^4.0.1"
   },
   "devDependencies": {
+    "cypress": "^16.3.0",
+    "http-server": "^14.1.1",
     "nodemon": "^3.1.14"
   }
 }
